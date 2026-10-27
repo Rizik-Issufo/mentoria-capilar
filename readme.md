@@ -30,25 +30,6 @@ aula ao vivo com partilha de ecrã.
    chmod 775 data
    ```
 
-## Estrutura
-
-```
-mentoria-capilar/
-├── index.php              → página inicial (hero, sobre, preços, galeria...)
-├── chamada.php             → sala de aula ao vivo com vídeo e partilha de ecrã
-├── comprar.php              → formulário de compra do manual digital
-├── processar_compra.php    → valida e regista o pedido, redireciona ao WhatsApp
-├── obrigado.php             → página de confirmação com botão do WhatsApp
-├── includes/
-│   ├── config.php           → número de WhatsApp, planos e preços (editar aqui)
-│   ├── header.php / footer.php
-│   └── curl-divider.php     → divisor decorativo (assinatura visual)
-├── css/style.css
-├── js/main.js               → efeito da barra de navegação
-├── js/chamada.js            → lógica WebRTC (PeerJS) da videochamada
-└── data/pedidos.json        → pedidos do manual (gerado automaticamente)
-```
-
 ## Sobre a sala de aula ao vivo
 
 A videochamada usa [PeerJS](https://peerjs.com/) (WebRTC) através da rede de
